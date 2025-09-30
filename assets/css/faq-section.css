@@ -1,0 +1,113 @@
+/* faq-section css start */
+.faq-accordion {
+    max-width: 846px;
+    margin: 0 auto;
+}
+
+.faq-accordion-item {
+    border: 1px solid var(--border-color2);
+    background-color: var(--item-bg);
+    margin: 0 0 8px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-accordion-item:last-child {
+    margin: 0;
+}
+
+.faq-accordion-item .item-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    padding: 16px 24px;
+}
+
+.faq-accordion-item .item-title-wrapper .item-title {
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    text-transform: capitalize;
+    font-weight: 500;
+    user-select: none;
+    transition: ease .3s;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -ms-transition: ease .3s;
+    -o-transition: ease .3s;
+}
+
+.faq-accordion-item .item-title-wrapper:hover .item-title {
+    color: var(--brand-color);
+}
+
+.faq-accordion-item.active .item-title-wrapper .item-title {
+    color: var(--brand-color);
+}
+
+.faq-accordion-item .item-title-wrapper .icon svg {
+    transition: ease .3s;
+    -webkit-transition: ease .3s;
+    -moz-transition: ease .3s;
+    -ms-transition: ease .3s;
+    -o-transition: ease .3s;
+}
+
+.faq-accordion-item.active .item-title-wrapper .icon svg {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    fill: var(--brand-color);
+}
+
+.faq-accordion-item-content {
+    padding: 14px 24px 18px;
+    display: none;
+    background-color: var(--white);
+}
+
+.faq-accordion-item-content-text {
+    margin: 16px 0 0 0;
+}
+
+.faq-accordion-item-content-text:first-child {
+    margin: 0;
+}
+
+.faq-accordion-item-content ul {
+    margin: 16px 0 0 18px;
+}
+
+.faq-accordion-item-content ul li {
+    list-style-type: disc;
+    margin: 0 0 10px 0;
+}
+
+.faq-accordion-item-content ul li:last-child {
+    margin: 0;
+}
+
+.faq-accordion-item-content ul li p,
+.faq-accordion-item-content .faq-accordion-item-content-text p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.faq-accordion-item-content .content {
+    margin: 10px 0 0 0;
+}
+
+/* faq-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* faq section css start */
+    /* faq section css end */
+}

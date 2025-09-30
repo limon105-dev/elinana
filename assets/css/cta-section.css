@@ -1,0 +1,32 @@
+/* cta-section css start */
+.section.cta-section {
+    padding-top: 0;
+}
+
+.cta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-content {
+    text-align: center;
+}
+
+.cta-content .icon {
+    display: flex;
+    margin: 0 0 10px 0;
+    justify-content: center;
+}
+
+.cta-text{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.cta-content .btn {
+    margin: 20px auto 0;
+}
+
+/* cta-section css end */

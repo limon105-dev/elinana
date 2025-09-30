@@ -1,0 +1,18 @@
+/* card-section css start */
+.card-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* card-section css end */
+
+@media only screen and (max-width: 767px) {
+
+    /* card-section css start */
+    .card-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* card-section css end */
+}

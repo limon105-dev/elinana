@@ -1,0 +1,41 @@
+/* newsletter-section css start */
+.newsletter-section {
+    background: var(--section-bg2);
+}
+
+.newsletter-section .section-heading-wrapper {
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.newsletter-section .section-heading-wrapper .section-heading {
+    color: var(--white);
+}
+
+.newsletter-section .section-heading-wrapper .section-heading-text {
+    color: var(--white);
+}
+
+.newsletter-wrapper {
+    margin: 32px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-field input {
+    padding: 0 10px;
+    font-size: 14px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 10px;
+    width: 220px;
+}
+
+.newsletter-field input:focus {
+    outline: auto;
+    outline-color: var(--black);
+}
+
+/* newsletter-section css end  */

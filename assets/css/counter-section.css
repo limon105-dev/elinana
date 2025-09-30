@@ -1,0 +1,113 @@
+/* counter-section css start */
+.counter-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.counter-item {
+    padding: 24px;
+    text-align: center;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.counter-item:hover {
+    margin-top: -5px;
+}
+
+.counter-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: var(--item-bg4);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all ease .2s;
+    margin: 0 auto;
+}
+
+.counter-item-icon svg {
+    stroke: var(--brand-color);
+}
+
+.counter-item:hover .counter-item-icon {
+    transition: all ease 1s;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    -o-transition: all ease 1s;
+}
+
+.counter-item-content {
+    margin: 16px 0 0 0;
+    text-align: center;
+}
+
+.h4.counter-item-count {
+    font-weight: 700;
+}
+
+.counter-item-text {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 4px 0 0 0;
+    color: var(--text-muted2);
+}
+
+.counter-item-content .line {
+    width: 40px;
+    height: 2px;
+    background: var(--brand-color);
+    display: block;
+    margin: 12px auto 0;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.counter-item:hover .counter-item-content .line {
+    width: 60px;
+}
+
+/* counter-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* counter-section css start */
+    .counter-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* counter-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* counter-section css start */
+    .counter-items {
+        gap: 16px;
+    }
+
+    .counter-item {
+        padding: 16px;
+    }
+
+
+    /* counter-section css end */
+}

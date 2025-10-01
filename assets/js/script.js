@@ -15,8 +15,23 @@ $(document).ready(function () {
 		$(".nav-link-wrapper").toggleClass("active");
 		$(".ham-menu").toggleClass("active");
 	});
-
 	// navbar js end ---
+
+	// --tab js start--
+	$('.tab-nav-item:first-child').addClass('active');
+	$('.tab-content-item').hide();
+	$('.tab-content-item:first').show();
+
+	$('.tab-nav-btn').on("mouseenter", function () {
+		$('.tab-nav-item').removeClass('active');
+		$(this).parent().addClass('active');
+		$('.tab-content-item').hide();
+
+		var activeTab = $(this).attr('href');
+		$(activeTab).fadeIn();
+		return false;
+	});
+	// --tab js end--
 
 	// **..faq-accordion js start..**
 	$('.faq-accordion-toggle-btn').on('click', function () {

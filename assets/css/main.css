@@ -1,56 +1,86 @@
 /* common css start */
 /* import fonts-- */
 @font-face {
-    font-family: 'Ekush';
-    src: url('../fonts/Ekush-Regular.woff') format('woff');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'SutonnyMJ';
-    src: url('../fonts/SutonnyMJ\ Regular.woff') format('woff');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Light.woff') format('woff');
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos-Light.woff') format('woff');
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-Light-Italic.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos.woff') format('woff');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-Italic.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos-SemiBold.woff') format('woff');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-SemiBold-Italic.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos-SemiBold.woff') format('woff');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Lato-Bold.woff') format('woff');
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-SemiBold-Italic.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos-Bold.woff') format('woff');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-Bold-Italic.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos-ExtraBold.woff') format('woff');
     font-weight: 800;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Black.woff') format('woff');
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-ExtraBold-Italic.woff') format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/Aptos-Black.woff') format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Aptos-Italic';
+    src: url('../fonts/Aptos-Black-Italic.woff') format('woff');
     font-weight: 900;
 }
 
@@ -72,20 +102,28 @@
     --item-bg2: #c3b1e1;
     --item-bg3: #cc5500;
     --item-bg4: rgba(212, 175, 55, 0.125);
+    --item-bg5: #d4af3720;
+    --item-bg6: #c3b1e120;
+    --item-bg7: #cc550020;
     --section-bg: #f5f5f5;
     --section-bg2: #0a2342;
     --card-bg: #ededed;
     --border-color: #e5e5e5;
     --border-color2: #0a234220;
     --border-color3: rgba(255, 255, 255, 0.2);
+    --border-color4: #0a234233;
     --text-muted2: #0a2342b3;
     --btn-color: #0a2342;
-    --btn-bg: #d4af37;
+    /* --btn-bg: #d4af37; */
+    --btn-bg: linear-gradient(90deg, oklch(55.8% .288 302.321) 0%, oklch(59.2% .249 .584) 100%);
 
     /* font family */
-    --heading-font: "Montserrat", serif;
-    --paragraph-font: "Montserrat", serif;
-    --stylish-font: "Montserrat", serif;
+    --heading-font: "Aptos",
+        serif;
+    --paragraph-font: "Aptos",
+        serif;
+    --stylish-font: "Aptos-Italic",
+        serif;
 }
 
 * {
@@ -253,7 +291,7 @@ button {
 .btn {
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 10.5px 20px;
     transition: ease .3s;
     font-family: var(--paragraph-font);
     text-transform: capitalize;
@@ -275,11 +313,11 @@ button {
 }
 
 .primary-btn {
-    color: var(--btn-color);
+    color: var(--white);
     position: relative;
     overflow: hidden;
-    background-color: var(--btn-bg);
-    border: 1px solid var(--btn-bg);
+    background: var(--btn-bg);
+    border: 1px solid transparent;
 }
 
 .primary-btn span,
@@ -295,11 +333,12 @@ button {
 }
 
 .primary-btn span {
-    background-color: var(--white);
+    background: var(--white);
 }
 
 .primary-btn:hover {
-    color: var(--btn-bg);
+    color: var(--paragraph-text-color);
+    border-color: var(--paragraph-text-color);
 }
 
 .primary-btn:hover span,
@@ -309,30 +348,59 @@ button {
 }
 
 .primary-btn:active {
-    background-color: var(--white);
+    background: var(--white);
 }
 
 .secondary-btn {
-    color: var(--btn-bg);
+    color: var(--paragraph-text-color);
     position: relative;
     overflow: hidden;
-    background-color: var(--white);
-    border: 1px solid var(--btn-bg);
+    background: var(--white);
+    border: 1px solid var(--paragraph-text-color);
 }
 
 .secondary-btn span {
-    background-color: var(--btn-bg);
+    background: var(--btn-bg);
 }
 
 .secondary-btn:hover {
-    color: var(--btn-color);
+    color: var(--white);
+    border-color: transparent;
 }
 
 .secondary-btn:active {
-    background-color: var(--btn-bg);
+    background: var(--btn-bg);
 }
 
 /* button css end */
+
+.h1.stylish-font {
+    font-family: var(--stylish-font);
+}
+
+.h2.stylish-font {
+    font-family: var(--stylish-font);
+}
+
+.h3.stylish-font {
+    font-family: var(--stylish-font);
+}
+
+.h4.stylish-font {
+    font-family: var(--stylish-font);
+}
+
+.h5.stylish-font {
+    font-family: var(--stylish-font);
+}
+
+.h6.stylish-font {
+    font-family: var(--stylish-font);
+}
+
+p.stylish-font {
+    font-family: var(--stylish-font);
+}
 
 /* section heading css start */
 .section-heading-wrapper {
@@ -341,14 +409,8 @@ button {
     margin: 0 auto 64px;
 }
 
-.h2.section-heading {
-    text-transform: capitalize;
-    font-weight: 300;
-}
-
 .section-heading {
     text-transform: capitalize;
-    font-weight: 300;
 }
 
 .section-heading em {

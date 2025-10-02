@@ -20,8 +20,12 @@
 }
 
 .hero-title em {
-    color: var(--brand-color);
     font-style: normal;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-image: var(--brand-color);
 }
 
 .hero-text {

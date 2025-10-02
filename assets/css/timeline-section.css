@@ -15,7 +15,7 @@
     top: 0;
     height: 100%;
     width: 2px;
-    background: linear-gradient(to bottom, rgb(248 245 240) 0%, rgb(17 42 72) 50%, rgb(248 245 240) 100%);
+    background: linear-gradient(to bottom, rgb(248 245 240) 0%, rgb(192 42 183) 50%, rgb(248 245 240) 100%);
     z-index: -1;
 }
 
@@ -48,8 +48,7 @@
     width: 18px;
     height: 18px;
     display: block;
-    background-color: var(--brand-color);
-    border: 1px solid var(--border-color4);
+    background: var(--brand-color);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;

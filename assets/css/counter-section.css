@@ -25,7 +25,7 @@
     justify-content: center;
     width: 56px;
     height: 56px;
-    background: var(--item-bg4);
+    background: var(--brand-color);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -36,7 +36,7 @@
 }
 
 .counter-item-icon svg {
-    stroke: var(--brand-color);
+    stroke: var(--white);
 }
 
 .counter-item:hover .counter-item-icon {

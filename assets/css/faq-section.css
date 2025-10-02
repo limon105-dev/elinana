@@ -43,11 +43,19 @@
 }
 
 .faq-accordion-item .item-title-wrapper:hover .item-title {
-    color: var(--brand-color);
+    color: transparent;
+    background: var(--brand-color);
+    background-clip: text;
+        -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 
 .faq-accordion-item.active .item-title-wrapper .item-title {
-    color: var(--brand-color);
+    color: transparent;
+    background: var(--brand-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 
 .faq-accordion-item .item-title-wrapper .icon svg {

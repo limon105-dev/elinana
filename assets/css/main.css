@@ -1,86 +1,86 @@
 /* common css start */
 /* import fonts-- */
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos-Light.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Light.woff') format('woff');
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-Light-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-LightItalic.woff') format('woff');
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Regular.woff') format('woff');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-Italic.woff') format('woff');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos-SemiBold.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Medium.woff') format('woff');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-SemiBold-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-MediumItalic.woff') format('woff');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos-SemiBold.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-SemiBold.woff') format('woff');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-SemiBold-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos-Bold.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Bold.woff') format('woff');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-Bold-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-BoldItalic.woff') format('woff');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos-ExtraBold.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-ExtraBold.woff') format('woff');
     font-weight: 800;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-ExtraBold-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-ExtraBoldItalic.woff') format('woff');
     font-weight: 800;
 }
 
 @font-face {
-    font-family: 'Aptos';
-    src: url('../fonts/Aptos-Black.woff') format('woff');
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Black.woff') format('woff');
     font-weight: 900;
 }
 
 @font-face {
-    font-family: 'Aptos-Italic';
-    src: url('../fonts/Aptos-Black-Italic.woff') format('woff');
+    font-family: 'Inter-Italic';
+    src: url('../fonts/Inter_18pt-BlackItalic.woff') format('woff');
     font-weight: 900;
 }
 
@@ -93,7 +93,8 @@
     --heading-text-color: #0a2342;
     --paragraph-text-color: #0a2342cc;
     --text-muted: #0a234280;
-    --brand-color: #d4af37;
+    --text-mark: #9810fa;
+    --brand-color: linear-gradient(90deg, oklch(55.8% .288 302.321) 0%, oklch(59.2% .249 .584) 100%);
     --body-color: #F8F5F0;
 
 
@@ -118,12 +119,9 @@
     --btn-bg: linear-gradient(90deg, oklch(55.8% .288 302.321) 0%, oklch(59.2% .249 .584) 100%);
 
     /* font family */
-    --heading-font: "Aptos",
-        serif;
-    --paragraph-font: "Aptos",
-        serif;
-    --stylish-font: "Aptos-Italic",
-        serif;
+    --heading-font: "Inter", sans-serif;
+    --paragraph-font: "Inter", sans-serif;
+    --stylish-font: "Inter-Italic", sans-serif;
 }
 
 * {
@@ -402,6 +400,11 @@ p.stylish-font {
     font-family: var(--stylish-font);
 }
 
+.stylish-font {
+    font-family: var(--stylish-font);
+    color: var(--text-mark);
+}
+
 /* section heading css start */
 .section-heading-wrapper {
     text-align: center;
@@ -415,7 +418,153 @@ p.stylish-font {
 
 .section-heading em {
     font-style: normal;
-    color: var(--brand-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-image: linear-gradient(to right in oklab, oklch(55.8% .288 302.321) 0%, oklch(59.2% .249 .584) 50%, oklch(64.6% .222 41.116) 100%), linear-gradient(to right in oklab, oklch(55.8% .288 302.321) 0%, oklch(64.6% .222 41.116) 100%);
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.color-animation-wrap {
+    position: absolute;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+    color: #0000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.color-animation-wrap span {
+    position: absolute;
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    mix-blend-mode: overlay;
+    width: 30vw;
+    height: 30vw;
+}
+
+.color-animation-wrap span:first-child {
+    animation: 6s ease-in-out infinite gradient-border, 12s ease-in-out infinite alternate gradient-1;
+    background: #cc0066
+}
+
+.color-animation-wrap span:nth-child(2) {
+    animation: 6s ease-in-out infinite gradient-border, 12s ease-in-out infinite alternate gradient-2;
+    -webkit-animation: 6s ease-in-out infinite gradient-border, 12s ease-in-out infinite alternate gradient-2;
+    background: #1aff66;
+    right: 0;
+}
+
+.color-animation-wrap span:nth-child(3) {
+    background: #004c99;
+    right: 0;
+    animation: 6s ease-in-out infinite gradient-border, 12s ease-in-out infinite alternate gradient-3;
+}
+
+.color-animation-wrap span:last-child {
+    background: #ff6;
+    animation: 6s ease-in-out infinite gradient-border, 12s ease-in-out infinite alternate gradient-4;
+
+}
+
+@keyframes gradient-border {
+
+    0%,
+    100% {
+        border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+    }
+
+    25% {
+        border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+    }
+
+    50% {
+        border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+    }
+
+    75% {
+        border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+    }
+}
+
+@keyframes gradient-1 {
+
+    0%,
+    100% {
+        top: 0px;
+        right: 0px;
+    }
+
+    50% {
+        top: 50%;
+        right: 25%;
+    }
+
+    75% {
+        top: 25%;
+        right: 50%;
+    }
+}
+
+@keyframes gradient-2 {
+
+    0%,
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+
+    60% {
+        top: 75%;
+        left: 25%;
+    }
+
+    85% {
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@keyframes gradient-3 {
+
+    0%,
+    100% {
+        bottom: 0px;
+        left: 0px;
+    }
+
+    40% {
+        bottom: 50%;
+        left: 25%;
+    }
+
+    65% {
+        bottom: 25%;
+        left: 50%;
+    }
+}
+
+@keyframes gradient-4 {
+
+    0%,
+    100% {
+        bottom: 0px;
+        right: 0px;
+    }
+
+    50% {
+        bottom: 25%;
+        right: 40%;
+    }
+
+    90% {
+        bottom: 50%;
+        right: 25%;
+    }
 }
 
 .section-heading-text {

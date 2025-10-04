@@ -1,0 +1,32 @@
+/* gallery-section css start */
+.gallery-section {}
+
+.gallery-img-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.gallery-img-item {
+    aspect-ratio: 1;
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    overflow: hidden;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+/* gallery-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* gallery-section css start */
+    .gallery-img-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* gallery-section css end */
+
+}

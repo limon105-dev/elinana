@@ -1,0 +1,32 @@
+/* about-banner-section css start */
+.about-banner {
+    background-image: url("../images/banner-bg.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.banner-section.about-banner .banner-wrapper {
+    padding: 100px 0 50px;
+}
+
+.banner-section.about-banner .banner-wrapper .banner-content-title {
+    color: var(--white);
+}
+
+.banner-section.about-banner .banner-wrapper .banner-content-text {
+    color: var(--white);
+    margin: 24px 0 0 0;
+}
+
+/* about-banner-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* about-banner-section css start */
+    .banner-section.about-banner .banner-wrapper {
+        padding: 75px 0 25px;
+    }
+
+    /* about-banner-section css end */
+}

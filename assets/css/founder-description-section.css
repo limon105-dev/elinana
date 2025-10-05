@@ -1,0 +1,56 @@
+/* founder-description-section css start */
+.founder-description-section {
+    background: var(--white);
+}
+
+.founder-description-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.founder-img {
+    width: 192px;
+    min-width: 192px;
+    height: 192px;
+    overflow: hidden;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.founder-description-text {
+    line-height: 30px;
+    color: var(--heading-text-color);
+}
+
+.founder-description-designation {
+    margin: 16px 0 0 0;
+    font-size: 14px;
+}
+
+/* founder-description-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* founder-description-section css start */
+    .founder-description-wrapper {
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .founder-description-text {
+        line-height: 26px;
+    }
+
+    .founder-description-designation {
+        margin: 12px 0 0 0;
+        font-size: 12px;
+    }
+
+    /* founder-description-section css end */
+}

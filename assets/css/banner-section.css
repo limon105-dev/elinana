@@ -33,13 +33,45 @@
     margin: 32px 0 0 0;
 }
 
+.banner-icon-box {
+    max-width: 672px;
+    margin: 32px auto 0;
+    padding: 32px;
+    text-align: center;
+    border: 1px solid var(--border-color4);
+    backdrop-filter: blur(8px);
+    background: linear-gradient(135deg, #f6ecd7, #ebe5f1, #f3d8cf);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.banner-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.banner-icon-wrap svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--text-muted3);
+}
+
+.banner-icon-box p {
+    margin: 16px 0 0 0;
+}
+
 /* banner-section css end */
 
 @media only screen and (max-width:992px) {
 
     /* banner-section css strat */
     .banner-wrapper {
-        padding: 0;
+        padding: 70px 0 0 0;
     }
 
     /* banner-section css end */
@@ -56,6 +88,16 @@
         font-size: 18px;
         line-height: 28px;
         margin: 24px 0 0 0;
+    }
+
+    .banner-icon-box {
+        margin: 24px auto 0;
+        padding: 20px;
+    }
+
+    .banner-icon-wrap svg {
+        width: 36px;
+        height: 36px;
     }
 
     /* banner-section css end */

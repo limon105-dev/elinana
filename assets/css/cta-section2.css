@@ -35,6 +35,19 @@
     border-color: var(--white);
 }
 
+.cta-content-btn-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    margin: 24px 0 0 0;
+}
+
+.cta-section2 .cta-content .cta-content-btn-wrap .btn {
+    margin: 0;
+    border-color: var(--white);
+}
+
 /* cta-section2 css end */
 
 @media only screen and (max-width: 575px) {
@@ -48,6 +61,15 @@
 
     .cta-section2 .cta-content .btn {
         margin: 24px auto 0;
+    }
+
+    .cta-content-btn-wrap {
+        flex-direction: column;
+        margin: 16px 0 0 0;
+    }
+
+    .cta-section2 .cta-content .cta-content-btn-wrap .btn {
+        width: 100%;
     }
 
     /* cta-section2 css end */

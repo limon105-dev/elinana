@@ -1,14 +1,11 @@
 /* hero-section css start */
-.hero-section {
-    margin: 50px 0 0 0;
-}
-
 .hero-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 64px;
+    padding: 100px 0 0 0;
 }
 
 .hero-content {
@@ -69,6 +66,16 @@
 }
 
 /* hero-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* hero-section css start */
+    .hero-wrapper {
+        padding: 70px 0 0 0;
+    }
+
+    /* hero-section css end */
+}
 
 @media only screen and (max-width: 767px) {
 

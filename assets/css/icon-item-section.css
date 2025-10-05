@@ -1,0 +1,78 @@
+/* icon-item-section css start */
+.icon-item-section {
+    background: var(--item-bg8);
+}
+
+.icon-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.icon-item {
+    text-align: center;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.icon-item:hover {
+    margin-top: -5px;
+}
+
+.icon-item .icon {
+    width: 64px;
+    height: 64px;
+    background: var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.h6.icon-item-title {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.icon-item-text {
+    margin: 10px 0 0 0;
+    line-height: 26px;
+}
+
+/* icon-item-section css end */
+
+@media only screen and (max-width: 767px) {
+
+    /* icon-item-section css start */
+    .icon-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon-item:last-child {
+        grid-column: span 2;
+    }
+
+    /* icon-item-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* icon-item-section css start */
+    .icon-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .icon-item:last-child {
+        grid-column: span 1;
+    }
+
+    /* icon-item-section css end */
+}

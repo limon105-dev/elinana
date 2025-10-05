@@ -1,0 +1,101 @@
+/* contact-section css start */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+}
+
+.contact-field-area .input-field {
+    margin: 0 0 20px 0;
+}
+
+.contact-field-area .custom-select-field {
+    margin: 0 0 20px 0;
+}
+
+.contact-field-area .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-content-area {
+    padding: 50px 24px;
+    background: var(--item-bg8);
+    border: 1px solid var(--border-color5);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+
+.contact-content-item:not(:last-child) {
+    margin: 0 0 24px 0;
+}
+
+.contact-content-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 8px 0;
+}
+
+.contact-content-heading .icon {
+    display: flex;
+}
+
+.contact-content-title {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.contact-content-item-text {
+    font-size: 14px;
+}
+
+.contact-content-text-box {
+    margin: 16px 0 0 0;
+    padding: 10px;
+    background: var(--border-color);
+    font-size: 14px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* contact-section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* contact-section css start */
+    .contact-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    /* contact-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* contact-section css start */
+    .contact-field-area .input-field {
+        margin: 0 0 16px 0;
+    }
+
+    .contact-field-area .custom-select-field {
+        margin: 0 0 16px 0;
+    }
+
+    .contact-content-area {
+    padding: 20px;
+}
+
+    /* contact-section css end */
+}

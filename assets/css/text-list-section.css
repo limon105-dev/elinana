@@ -1,0 +1,43 @@
+/* text-list-section css start */
+.text-list-wrapper {
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.text-list-wrapper li {
+    padding: 0 0 10px 32px;
+    position: relative;
+}
+
+.text-list-wrapper li::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/start.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-list-wrapper li p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--heading-text-color);
+}
+
+/* text-list-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* text-list-section css start */
+    .text-list-wrapper li p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* text-list-section css end */
+}

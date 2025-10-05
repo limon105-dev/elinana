@@ -41,12 +41,12 @@ $(document).ready(function () {
 	});
 	// **..product-accordion js end..**
 
-	// **..topbar-select-accordion js start..**
-	$('.product-varient-select-btn').on('click', function () {
+		// **..select-accordion js start..**
+	$('.custom-select-btn').on('click', function () {
 		$(this).next().slideToggle();
 		$(this).parent().toggleClass('active');
 	});
-	// **..topbar-select-accordion js end..**
+	// **..select-accordion js end..**
 })
 
 // btn js ---

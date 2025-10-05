@@ -1,0 +1,110 @@
+/* brand-name-details-section css start */
+.brand-name-details-box {
+    max-width: 896px;
+    margin: 0 auto;
+    padding: 32px;
+    background: var(--white);
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+    border: 1px solid var(--border-color6);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.brand-name-details-box-top {
+    text-align: center;
+}
+
+.brand-name-details-box-top-title {
+    line-height: 24px;
+    color: var(--heading-text-color);
+}
+
+.brand-name-details-box-top-title em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.brand-name-details-box-top-text {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 10px 0 0 0;
+}
+
+.brand-name-details-box-center {
+    margin: 24px 0 0 0;
+}
+
+.brand-name-details-box-center-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--heading-text-color);
+}
+
+.brand-name-details-box-center-items {
+    margin: 16px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.brand-name-details-box-center-item {
+    padding: 16px;
+    background: var(--body-color);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.brand-name-details-box-center-item p {
+    color: var(--heading-text-color);
+    font-size: 14px;
+}
+
+.brand-name-details-box-center-item p em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.brand-name-details-box-center-item:last-child {
+    grid-column: span 2;
+    background: var(--item-bg9);
+    border: 1px solid var(--border-color4);
+}
+
+.brand-name-details-box-btm {
+    margin: 24px 0 0 0;
+    text-align: center;
+}
+
+.brand-name-details-box-btm p {
+    font-size: 14px;
+    color: var(--heading-text-color);
+    font-weight: 500;
+}
+
+/* brand-name-details-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* brand-name-details-section css start */
+    .brand-name-details-box {
+        padding: 20px;
+    }
+
+    .brand-name-details-box-center-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .brand-name-details-box-center-item:last-child {
+        grid-column: span 1;
+    }
+
+    /* brand-name-details-section css end */
+}
